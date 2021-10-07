@@ -1,0 +1,127 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid:
+    "myArea ."
+    "myArea .";
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  grid-auto-flow: column;
+}
+
+.grid-container > section {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+#cover {
+  grid-area: myArea;
+}
+
+div[class="flexbox-container"] {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox-container > section {
+  background-color: #f1f1f1;
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+#title{
+    margin-top: 5pc;
+    position: static;
+}
+/* subtitle style */
+#subtitle {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 1em;
+    padding-right: 2vw;
+    
+}
+
+#date{
+    margin:5pt 20% 5pt 20%;
+    padding:5pt 10% 5pt 10%;
+    text-decoration: underline;
+    text-align: center;
+    color:darkcyan;
+    display: block;
+}
+#attendence{
+    border-style: solid;
+    border-color: hsl(166, 100%, 63%);
+    border-width: 5px;
+    border-radius: 25px;
+    height: 200px;
+    width: 20%;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+nav {
+    display: flex;
+    background: burlywood;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+nav a {
+    background: transparent;
+    color: white;
+    padding: 15px;
+    width: 33%;
+    border-color: black;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+nav>a:active {
+    background: rgb(190, 78, 78);
+    color: black;
+    border-color: black;
+}
+#feedback{
+    display: none;
+}
+
+*{
+    font-style: normal;
+}
+h2,h3{
+    font-size: 20px;
+}
+hr + h2{
+    font-weight: 100;
+}
+p ~ details{
+    font-size: 10px;
+}
+
+summary.s{
+    font-style: italic;
+}

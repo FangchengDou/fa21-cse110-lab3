@@ -5,26 +5,40 @@
     <title>meeting note 10/01/2021</title>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style media="screen and (min-width:1100px)">
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+    <style media="screen and (max-width:1099px)">
+        body {
+            background-color: beige;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#cover">cover</a></li>
-                <li><a href="#unfinished">unfinished</a></li>
-                <li><a href="#new">new</a></li>
-                <li><a href="#content">content</a></li>
-                <li><a href="#feedback">feedback</a></li>
-            </ul>
+            
+               <a href="#cover">cover</a>
+                <a href="#unfinished">unfinished</a>
+                <a href="#new">new</a>
+                <a href="#content">content</a>
+                <a href="#feedback">feedback</a>
+           
         </nav>
     </header>
     <main>
-        <h1>Topic: Meeting about travel plans</h1>
-        <h2>brainstorming</h2>
-        <h2>Meeting date: 10/2/2021</h2>
+        <h1 id="title">Topic: Meeting about travel plans</h1>
+        <h2 id="subtitle">brainstorming</h2>
+        <h2 id="date">Meeting date: 10/2/2021</h2>
         <hr>
-        <section>
+        <section id="attendence" style="margin: auto;" >
             <h3>attendence list</h3>
             <ul>
                 <li>Bob</li>
@@ -36,33 +50,39 @@
         </section>
 
         <hr>
-        <section id="cover">
-            <h3>agenda of what the meeting will cover</h3>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit omnis ratione quidem ipsum est alias
-                nobis consequuntur quos nihil, vero tempora eius perferendis quaerat pariatur odio perspiciatis ducimus,
-                officia ea!</div>
-        </section>
+        <div class="grid-container">
+            <section id="cover">
+                <h3>agenda of what the meeting will cover</h3>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit omnis ratione quidem ipsum est
+                    alias
+                    nobis consequuntur quos nihil, vero tempora eius perferendis quaerat pariatur odio perspiciatis
+                    ducimus,
+                    officia ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam reiciendis doloribus eos facere aut quam in eligendi labore nostrum nobis minus ipsum rem pariatur optio, obcaecati voluptate suscipit? Hic!</div>
+            </section>
 
-        <hr>
-        <section id="unfinished">
-            <h3>things that were unfinished business from last meeting</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, repudiandae molestiae est cumque nam
-                explicabo libero sequi veritatis, maxime veniam cum in sapiente quas ullam assumenda excepturi nisi
-                possimus fuga.</div>
-        </section>
 
-        <hr>
-        <section id="new">
-            <h3>things that are new business that need to be talked about</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni sit qui obcaecati doloremque facilis
-                similique, quaerat, aspernatur quia repellendus repellat molestias, exercitationem a labore omnis
-                tenetur facere libero ipsum.</div>
-        </section>
-        <hr>
-        <section id="content">
-            <h2>Content of meeting</h2>
-            <ol>
-                <li>
+            <section id="unfinished">
+                <h3>things that were unfinished business from last meeting</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, repudiandae molestiae est cumque
+                    nam
+                    explicabo libero sequi veritatis, maxime veniam cum in sapiente quas ullam assumenda excepturi nisi
+                    possimus fuga.</div>
+            </section>
+
+
+            <section id="new">
+                <h3>things that are new business that need to be talked about</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni sit qui obcaecati doloremque
+                    facilis
+                    similique, quaerat, aspernatur quia repellendus repellat molestias, exercitationem a labore omnis
+                    tenetur facere libero ipsum.</div>
+            </section>
+        </div>
+        <hr><h2>Content of meeting</h2>
+        <div id="content" class="flexbox-container">
+            
+            
+                <section>
                     <h3><span>Doubts raised by</span> Bob</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores qui sed eum cum. In harum
                         blanditiis
@@ -70,31 +90,31 @@
                         nostrum.
                     </p>
                     <img src="bob1.jpg" alt="bob's whiteboard">
-                </li>
+                </section>
 
-                <li>
+                <section>
                     <h3>Peter's opinion</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, pariatur non delectus iure rem
                         enim incidunt omnis deleniti mollitia veritatis itaque sapiente impedit unde, libero aperiam
                         obcaecati est quam maiores.</p>
                     <audio src="horse.ogv" controls="controls">peter's audio</audio>
-                </li>
+                </section>
 
-                <li>
+                <section>
                     <h3>Alice's problem</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium voluptatem blanditiis
                         officia sint, quaerat aliquam repudiandae aut quam amet accusamus mollitia quibusdam voluptates
                         ex doloremque incidunt nihil laboriosam voluptas non?</p>
                     <video src="movie.ogv" controls="controls">Peter's video</video>
-                </li>
-                <li>
+                </section>
+                <section>
                     <h3>conclusion by Jimmy</h3>
                     <p><b>Lorem ipsum</b>, <strong> sit amet </strong><i>consectetur adipisicing</i> elit.<em> Corrupti
                             sequi </em>asperiores mollitia
                         eaque ducimus, molestiae ullam natus error cumque dignissimos, animi aliquam, enim alias minus
                         excepturi delectus atque quod. Autem!</p>
                     <details>
-                        <summary>details</summary>
+                        <summary class="s">details</summary>
 
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt maxime iure,
                             quod ea eos odit reiciendis! Quae aspernatur veniam ratione blanditiis cupiditate,
@@ -102,8 +122,8 @@
 
                     </details><a href="https://ucsd.edu/">reference</a>
 
-                </li>
-            </ol>
+                </section>
+            </div>
 
 
         </section>
@@ -131,7 +151,7 @@
                     <option>disagree</option>
                     <option>no opinion</option>
                 </select>
-                
+
                 <fieldset>
                     name:<input type="text">
                     date: <input type="date">
